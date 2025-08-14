@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { NigerianCoatOfArms } from "./NigerianCoatOfArms";
+import coatOfArms from "../assets/coat-of-arms.png";
 
 export default function Header({ sidebarOpen, setSidebarOpen }) {
   const toggleSidebar = () => {
@@ -47,7 +47,12 @@ export default function Header({ sidebarOpen, setSidebarOpen }) {
 
         <Link to="/dashboard" className="logo-container">
           <div className="coat-of-arms">
-            <NigerianCoatOfArms width={48} height={48} />
+            <img
+              src={coatOfArms}
+              alt="Coat of Arms"
+              className="logo"
+              style={{ width: "40px", height: "40px", borderRadius: "50%" }}
+            />
           </div>
           <div className="header-titles">
             <h1 className="header-title">
